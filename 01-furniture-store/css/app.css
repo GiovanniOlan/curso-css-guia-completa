@@ -74,6 +74,7 @@ img {
 
 .btn:hover {
     background-color: #769c02;
+    cursor: pointer;
 }
 
 /* Header and Navbar */
@@ -292,27 +293,27 @@ img {
     justify-content: space-between;
 }
 
-.meta-entry span{
+.meta-entry span {
     color: #037bc0;
     font-weight: 900;
 }
 
-.btn-read{
+.btn-read {
     width: 40%;
 }
 
-.separator.container-navegation{
+.separator.container-navegation {
     margin: 4rem 0 2rem;
 }
 
-.blog-entry-content{
+.blog-entry-content {
     width: 60rem;
     margin: 0 auto;
 }
 
 /* Page Gallery */
 
-.gallery{
+.gallery {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -321,8 +322,48 @@ img {
     gap: 2rem;
 }
 
-.gallery img{
+.gallery img {
     height: 40rem;
     width: 40rem;
     object-fit: cover;
+}
+
+/* Page Contact */
+
+.form {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.form fieldset {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.form legend {
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.field label {
+    flex-basis: 10rem;
+}
+
+.field input:not([type="radio"]),
+.field textarea,
+.field select{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
 }
